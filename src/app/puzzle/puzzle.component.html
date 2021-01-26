@@ -1,0 +1,13 @@
+
+<div class="puzzle" *ngIf="puzzle">
+  <div class="box" *ngFor="let box of puzzle.puzzle;let j=index;">
+    <div class="space"
+      *ngFor="let space of box;let i=index;"
+      [class.selected]="j === selectedBox && i === selectedSpace && attemptedNumber === 0"
+      [class.highlighted]="j === selectedBox && i === selectedSpace && attemptedNumber !== 0"
+      [class.blank]="space === 0"
+      (click)="selectSpace(i,j)">
+        {{space}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.blank {
+  color: white;
+}
+.puzzle {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 2px;
+}
+.box {
+  margin: 1px;
+  float: left;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+}
+.space {
+  background-color: white;
+  margin: 1px;
+  float: left;
+  font-size: 24px;
+  padding: 16px;
+}
+.selected {
+  background-color: #cccccc;
+  color: #cccccc;
+}
+.highlighted {
+  background-color: #f2f542;
+  color: black;
+}
